@@ -1,7 +1,6 @@
 package utils;
 
 import java.sql.Connection;
-import javax.servlet.jsp.jstl.core.*;
 import javax.servlet.ServletRequest;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
