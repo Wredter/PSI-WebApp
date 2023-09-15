@@ -14,8 +14,8 @@ public class SQLServerConnUtils_SQLJDBC {
 		String hostName = "localhost";
 		String sqlInstanceName = "MSSQLSERVER";
 		String database = "PSI_db";
-		String userName = "PSI-admin";
-		String password = "admin123";
+		String userName = "test";
+		String password = "12345";
 		return getSQLServerConnection_SQLJDBC(hostName, sqlInstanceName, database, userName, password);
 	}
 
@@ -30,7 +30,7 @@ public class SQLServerConnUtils_SQLJDBC {
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		// jdbc:sqlserver://ServerIp:1433/SQLEXPRESS;databaseName=simplehr
 		String connectionURL = "jdbc:sqlserver://" + hostName + ":1433" + ";instance=" + sqlInstanceName
-				+ ";databaseName=" + database;
+				+ ";databaseName=" + database + ";encrypt=true;trustServerCertificate=true";
 		Connection conn = DriverManager.getConnection(connectionURL, userName, password);
 		return conn;
 	}
