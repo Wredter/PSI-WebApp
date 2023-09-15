@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class ConnectionUtils {
 	public static Connection getConnection() throws ClassNotFoundException, SQLException {
 
-		return SQLServerConnUtils_SQLJDBC.getSQLServerConnection_SQLJDBC();
+		return SQLServerConnUtils_SQLJDBC.getH2ServerConnection_JDBC();
 	}
 
 	public static void closeQuietly(Connection conn) {
