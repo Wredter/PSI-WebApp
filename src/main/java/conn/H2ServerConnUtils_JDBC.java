@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class SQLServerConnUtils_SQLJDBC {
+public class H2ServerConnUtils_JDBC {
 // Connect to SQLServer
 // (Using JDBC Driver: SQLJDBC) 
 	public static Connection getH2ServerConnection_JDBC() throws ClassNotFoundException, SQLException {
